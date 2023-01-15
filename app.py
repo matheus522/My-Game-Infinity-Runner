@@ -7,7 +7,7 @@ GAME_SPEED = 10
 GROUND_WIDTH = 2 * WIDTH
 GROUND_HEIGHT = 30
 
-
+#Define as imagens do player e atualiza as mesmas.
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
@@ -72,6 +72,7 @@ class Ground(pygame.sprite.Sprite):
     def update(self, *args):
         self.rect[0] -= GAME_SPEED
 
+#Define os obstaculos
 class Obstacles(pygame.sprite.Sprite):
     def __init__(self, xpos, ysize):
         pygame.sprite.Sprite.__init__(self)
